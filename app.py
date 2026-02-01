@@ -10,9 +10,11 @@ import nltk
 @st.cache_resource
 def download_nltk_data():
     nltk.download("punkt")
+    nltk.download("punkt_tab")   # 🔥 THIS IS THE MISSING ONE
     nltk.download("stopwords")
 
 download_nltk_data()
+
 
 
 
